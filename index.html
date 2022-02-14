@@ -1,0 +1,23 @@
+<button class="boton">Calcular</button>
+<input class="numero1">
+<input class="numero2">
+<span class="resultado"></span>
+
+<script>
+
+ function bucarElemento(selector){
+          return document.querySelector(selector);
+    }
+
+
+  var boton = bucarElemento('.boton');
+  var numero1 = bucarElemento('.numero1');
+  var numero2 = bucarElemento('.numero1');
+  var resultado = bucarElemento('.resultado');
+
+  boton.addEventListener('click', function() {
+
+  resultado.textContent = numero1.value * numero2.value;
+
+    });
+</script>
